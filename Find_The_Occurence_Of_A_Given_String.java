@@ -2,6 +2,7 @@ public class Find_The_Occurence_Of_A_Given_String {
     public static char getMaxOccuringChar(String line)
     {
         int []arr = new int[26];
+        // the time complexity is o(n) and spaceComplexity is o(1) ;
         // create an array of count of character
         for (int i =0; i<line.length(); i++)
         {
@@ -16,7 +17,6 @@ public class Find_The_Occurence_Of_A_Given_String {
             }
             arr[number]++;
         }
-
         int maxi = -1;
         int ans = -1;
         for (int i = 0; i<26; i++)
