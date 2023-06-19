@@ -4,7 +4,6 @@ public class Hamming_distances_is_improved {
         int ans = x^y;
         int result = 0;
         while (ans>0)
-
         {
             result += ans&1;
             /* this is also work
