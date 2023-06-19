@@ -1,5 +1,6 @@
 public class Hamming_distances_is_improved {
     public static int hammingDistance(int x, int y) {
+//        The Hamming distance between two integers is the number of positions at which the corresponding bits are different
         int ans = x^y;
         int result = 0;
         while (ans>0)
