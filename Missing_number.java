@@ -17,7 +17,5 @@ public class Missing_number {
     public static void main(String[] args) {
         int[]nums = {0,1};
         System.out.println(missingNumber(nums));
-
-        System.out.println(1^2);
     }
 }
