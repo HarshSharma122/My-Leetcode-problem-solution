@@ -7,8 +7,7 @@ public class Number_Complement {
 //      }
 //       return n;
         // this is another method to solve this problem
-        return ~n & (Integer.highestOneBit(n) - 1);
-
+        return ~n &(Integer.highestOneBit(n)-1);
     }
     public static void main(String[] args) {
         System.out.println(findComplement(5));
