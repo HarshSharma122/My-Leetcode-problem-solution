@@ -3,7 +3,7 @@ import java.util.Vector;
 public class Count_Primes_Medium_204 {
     public static int countPrimes(int n)
     {
-     boolean[] ans = new boolean[n];
+      boolean[] ans = new boolean[n];
      int count  = 0 ;
      boolean flag = true;
 
@@ -18,8 +18,7 @@ public class Count_Primes_Medium_204 {
              }
          }
      }
- return count;
-
+    return count;
     }
     public static void main(String[] args) {
         System.out.println(countPrimes(100));
