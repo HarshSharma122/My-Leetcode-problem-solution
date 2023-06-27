@@ -12,7 +12,6 @@ public class plus_one {
         }
         int[] arr = new int[n+1];
         arr[0]=1;
-
         return arr;
     }
     public static void main(String[] args) {

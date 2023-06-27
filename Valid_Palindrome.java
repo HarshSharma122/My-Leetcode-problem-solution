@@ -1,26 +1,26 @@
 public class Valid_Palindrome {
     public static boolean isPalindrome(String s)
     {
-        if (s.isEmpty()) // if s is blank then you should return true
+        // first check the string is empty or not
+        if (s.isEmpty())
         {
             return true;
         }
-        String str = s.toLowerCase();
-        // remove the non AlphaNumeric character like:- _, $, *
-        str = str.replaceAll("[^a-zA-Z0-9]", "");
-        StringBuilder revStr = new StringBuilder(str);
-        revStr.reverse();
-        String rstr = revStr.toString();
-        if(str.equals(rstr))
+        s = s.toLowerCase();
+        s = s.replaceAll("[^a-zA-Z0-9]", "");
+        StringBuilder revstr = new StringBuilder();
+        revstr.reverse();
+        String rev = revstr.toString();
+        if (s.equals(rev))
         {
             return true;
-
         }
-        return false;
-
+        else
+        {
+            return false;
+        }
     }
     public static void main(String[] args) {
         System.out.println(isPalindrome("A man, a plan, a canal: Panama"));
-
     }
 }
