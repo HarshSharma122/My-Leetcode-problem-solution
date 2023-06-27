@@ -5,7 +5,6 @@ public class Determine_the_winner_of_a_bowling_game {
         int s2 = 0;
         int ans = 0;
         int n = player1.length;
-
         for (int i = 0; i<n; i++)
         {
             s1 += player1[i];
