@@ -4,7 +4,6 @@ public class Sum_of_2 {
         // Here two pointer approach work
         int s = 0;
         int e = numbers.length-1;
-
         while (s<=e)
         {
             if (numbers[s] + numbers[e] == target)
