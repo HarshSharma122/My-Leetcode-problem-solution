@@ -7,7 +7,7 @@ public class Average_Value_of_Even_Numbers_That_Are_Divisible_by_Three {
         int harsh = 0;
         for (int i = 0;i<nums.length; i++)
         {
-            if (nums[i] %3==0 && nums[i]%2==0)
+            if (nums[i] %6==0) // 
             {
 
                 ans = count++;
