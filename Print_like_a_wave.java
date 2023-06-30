@@ -9,7 +9,7 @@ public class Print_like_a_wave {
             // odd index -->> bottom to top
             if ((col%2!=0) || (col&1)!=0)
             {
-                for (int row = nrow-1; row>=0; row--) 
+                for (int row = nrow-1; row>=0; row--)
                 {
                     ans.add(arr[row][col]);
                 }
