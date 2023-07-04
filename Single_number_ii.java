@@ -1,13 +1,19 @@
-//import java.util.Arrays;
-//public class Single_number_ii {
-//    public static int singleNumber(int[] nums)
-//    {
-//
-//
-//    }
-//    public static void main(String[] args) {
-//        int[] nums ={3,5,1,3,1,3,1};
-//        //500 100 100 100 30000 30000 30000
-//        System.out.println(singleNumber(nums));
-//    }
-//}
+import java.util.Arrays;
+public class Single_number_ii {
+    public static int singleNumber(int[] nums)
+    {
+       int res = 0;
+       int ans = 0;
+       for (int num:nums)
+       {
+           res  = (res ^ num) & ~ans;
+           ans = (ans ^ num) & ~ res;
+
+       }
+       return res;
+    }
+    public static void main(String[] args) {
+        int[] nums ={3,5,1,3,1,3,1};
+        System.out.println(singleNumber(nums));
+    }
+}
