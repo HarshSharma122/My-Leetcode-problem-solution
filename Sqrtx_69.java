@@ -1,31 +1,23 @@
 public class Sqrtx_69 {
     public static int sqrt(int x)
     {
-        return binarySearch(x);
-    }
-    public static int binarySearch(int n)
-    {
-        int s = 0;
-        int e = n;
-        int mid = s + (e - s)/2;
-        int ans = -1;
-        while (s<=e)
+        int start = 0;
+        int end = x;
+        while (start<=end)
         {
-            int square = mid * mid;
-            if (square==n)
-            {
-                return mid;
-            } else if (square>n) {
-                e  = mid - 1;
+            long mid = (start + end)/2;
 
+            long ans = mid * mid;
+            if (ans<=(long) x)
+            {
+                start = (int)(mid + 1);
             }else
             {
-                ans  = mid;
-                s = mid + 1;
+                end = (int) (mid - 1);
             }
-            mid = s + (e- s)/2;
+
         }
-        return ans;
+        return end;
     }
     public static void main(String[] args) {
         System.out.println(sqrt(16));
