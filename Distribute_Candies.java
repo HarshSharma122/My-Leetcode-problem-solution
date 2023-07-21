@@ -1,36 +1,19 @@
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Distribute_Candies {
     public static int distributeCandies(int[] candyType)
     {
-        Arrays.sort(candyType);
-        int count = 1;
-        int n =candyType.length;
-        if (n%2!=0){
-            return 0;
+        Set<Integer> candy = new HashSet<>();
+        for (int e:candyType)
+        {
+            candy.add(e);
         }
-       if (n%2==0)
-       {
-           for(int i = 0; i<candyType.length-1; i++)
-           {
-               if (candyType[i]!=candyType[i+1])
-               {
-                   count++;
-               }
-           }
-           int ans = n/2;
-           if (ans>count)
-           {
-               return count;
-           }else if (ans<count)
-           {
-               return ans;
-           }
-       }
-       return count;
+        return Math.min(candyType.length/2, candy.size());
     }
     public static void main(String[] args) {
-        int[] nums = {1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,3};
+        int[] nums = {1,11};
         System.out.println(distributeCandies(nums));
     }
 }
