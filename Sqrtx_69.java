@@ -6,7 +6,6 @@ public class Sqrtx_69 {
         while (start<=end)
         {
             long mid = (start + end)/2;
-
             long ans = mid * mid;
             if (ans<=(long) x)
             {
@@ -15,12 +14,10 @@ public class Sqrtx_69 {
             {
                 end = (int) (mid - 1);
             }
-
         }
         return end;
     }
     public static void main(String[] args) {
         System.out.println(sqrt(16));
-
     }
 }
