@@ -7,7 +7,6 @@ public class First_Missing_positive {
          for (int i =0 ; i<nums.length;i++)
          {
              if (nums[i]==abc)
-
              {
                  abc++;
              }
@@ -15,7 +14,7 @@ public class First_Missing_positive {
          return abc;
     }
     public static void main(String[] args) {
-        int[] nums = {1,2,3,4,5,7};
+        int[] nums = {1,2,3,4};
         System.out.println(missingNum(nums));
     }
 }

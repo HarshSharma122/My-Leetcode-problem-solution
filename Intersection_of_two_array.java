@@ -7,7 +7,7 @@ public class Intersection_of_two_array {
     {
         HashSet<Integer> set = new HashSet<>();
         for (int i = 0; i<nums1.length; i++)
-        {
+         {
             set.add(nums1[i]);
         }
         ArrayList<Integer> ans = new ArrayList<>();
